@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(250, 248, 248);
+    margin: 20px;
+    text-align: center;
+    /* font-family: 'myFont';
+    font-size: 20px; */
+
+}
+
+.container {
+    background-color: rgb(222, 222, 222);
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid;
+}
+
+#logo {
+    border-radius: 50px;
+}
+
+.form-style {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 10px;
+}
+
+fieldset {
+    margin: 15px;
+}
+
+@font-face {
+    font-family: 'myFont';
+    src: url(/handodle.regular.ttf);
+}
+
+h1 {
+    font-family: 'myFont';
+    font-size: 60px;
+}

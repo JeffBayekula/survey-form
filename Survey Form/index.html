@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Grind® Stores Survey</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1105710/header.jpg?t=1628648877" alt="A skater doing a kickflip">
+        <h1 id="title">Grind<sup>®</sup> Stores Survey</h1>
+        <p id="description">This survey is made from Grind<sup>&reg;</sup> Stores to see what type of extreme sport enthusiast you are and to thank you for your never ending support.</p>
+    </header>
+    <div class="container">
+        <form action="#" method="post" id="survey-form">
+            <div class="form-style">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" name="person" id="name" placeholder="Put your name here (obviously)" required>
+            </div>
+            <div class="form-style">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="person" id="email" placeholder="Put your @ here" required>
+            </div>
+            <div class="form-style">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" name="person" id="number" min="18" max="99" placeholder="Feel like sharing?">
+            </div>
+
+            <!-- Dropdown menu -->
+            <div class="form-style">
+                <label for="dropdown">Which sport gets you excited?</label>
+                <select name="sport" id="dropdown">
+                    <option disabled selected>Choose your passion</option>
+                    <option value="bmx">BMX</option>
+                    <option value="mtb">Mountain Bike</option>
+                    <option value="surf">Surf</option>
+                    <option value="skate">Skate</option>
+                    <option value="kite">Kite</option>
+                    <option value="motocross">Motocross</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <!-- Checkbox section -->
+            <fieldset class="form-style">
+                <legend>Which brand speaks to you the most?</legend>
+                <label for="circa">Circa
+                    <input type="checkbox" value="fav_circa" name="brand" id="circa">
+                </label>
+                <label for="element">Element
+                    <input type="checkbox" value="fav_element" name="brand" id="element">
+                </label>
+                <label for="we ride local">We Ride Local
+                    <input type="checkbox" value="fav_we_ride_local" name="brand" id="we ride local">
+                </label>
+                <label for="nike sb">Nike SB
+                    <input type="checkbox" value="fav_nike_sb" name="brand" id="nike sb">
+                </label>
+                <label for="vans">Vans
+                    <input type="checkbox" value="fav_vans" name="brand" id="vans">
+                </label>
+            </fieldset>
+
+            <!-- Radio section -->
+            <fieldset class="form-style">
+                <legend>Would you recommend us to a friend?</legend>
+                <label for="yes">For sure</label>
+                <input type="radio" name="recommendation" id="yes">
+                <label for="maybe">Hmm.. I'll think about it</label>
+                <input type="radio" name="recommendation" id="maybe">
+                <label for="no">Sorry but no..</label>
+                <input type="radio" name="recommendation" id="no">
+            </fieldset>
+            <div class="form-style">
+            <p>Any words of wisdom?</p>
+            <textarea name="comments" id="comments" cols="40" rows="8" placeholder="Throw your comment here..."></textarea>
+            </div>  
+            
+            <!-- Buttons -->
+            <button type="submit" id="submit">Let's go</button> <button type="reset" id="reset">Clear All</button>
+
+        </form>
+    </div>
+</html>
